@@ -9,34 +9,49 @@ import SwiftUI
 
 struct CoffeeShopListView: View {
     
-    @State private var searchText = ""
-    @State private var coffeeShops : [CoffeeShop] = [.starbucks,.starbucks,.starbucks,.starbucks]
+    @ObservedObject var controller = CoffeeShopListViewController()
     
     var body: some View {
-        NavigationView{
-            List {
-                Section(
-                    header: Text("Ideais para trabalhar"),
-                    content: {
-                    ForEach(searchResults, id: \.self) {
-                        filteredShopp in
-                        CoffeeShopItemList(coffeeShop: filteredShopp)
-                    }
+        VStack {
+            NavigationView{
+                List {
+                    Section(
+                        header: Text("Categorias"),
+                        content: {
+                            ScrollView(.horizontal, showsIndicators: false){
+                                HStack{
+                                    CoffeeShopCategoryItem()
+                                    CoffeeShopCategoryItem()
+                                    CoffeeShopCategoryItem()
+                                    CoffeeShopCategoryItem()
+                                }
+                            }
+                    })
+                    Section(
+                        header: Text("Cafeterias próximas"),
+                        content: {
+                            ForEach(searchResults, id: \.self) {
+                                filteredShop in
+                                NavigationLink(destination: CoffeeShopItemDetails(coffeeShopItem: filteredShop)){
+                                    CoffeeShopItemList(coffeeShopItem: filteredShop)
+                                }
+                            }
+                        }
+                    )
                 }
-                
-                )
+                .navigationTitle("CoffePlace")
+                 .searchable(text: $controller.searchText)
+                 .listStyle(.plain)
             }
-            .navigationTitle("Cafeterias")
-            .searchable(text: $searchText)
-            .listStyle(.plain)
         }
+        
     }
     
     var searchResults: [CoffeeShop] {
-        if searchText.isEmpty {
-            return coffeeShops
+        if controller.searchText.isEmpty {
+            return controller.coffeeShops
         } else {
-            return coffeeShops.filter { $0.name.localizedCaseInsensitiveContains(searchText)}
+            return controller.coffeeShops.filter { $0.name.localizedCaseInsensitiveContains(controller.searchText)}
         }
     }
 }

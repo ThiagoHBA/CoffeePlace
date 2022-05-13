@@ -9,15 +9,15 @@ import SwiftUI
 
 struct CoffeeShopItemList: View {
     
-    var coffeeShop: CoffeeShop
+    var coffeeShopItem: CoffeeShop
     
     var body: some View {
         HStack{
             VStack{
-                Image(coffeeShop.image)
+                Image(coffeeShopItem.image)
                     .resizable()
-                    .scaledToFit()
-                    .frame(height: 80)
+                    .scaledToFill()
+                    .frame(width: 80,height: 80)
                     .clipShape(Circle())
                
                 Text("Aberto")
@@ -30,16 +30,16 @@ struct CoffeeShopItemList: View {
                 
     
             VStack(alignment: .leading){
-                Text(coffeeShop.name).font(.title2).bold()
-                Text(coffeeShop.description).font(.caption)
+                Text(coffeeShopItem.name).font(.title2).bold()
+                Text(coffeeShopItem.description).font(.caption)
         
                 Spacer()
                 
-                HStack {
-                    EnviromentAtributtes(image: "wifi", description: "Wi-fi")
-                    EnviromentAtributtes(image: "person.2.fill", description: String(coffeeShop.personsPerTable))
-                    EnviromentAtributtes(image: "powerplug.fill", description: String(coffeeShop.socketsPerTable))
-                }
+//                HStack {
+//                    EnviromentAtributtes(image: "wifi", description: "Wi-fi")
+//                    EnviromentAtributtes(image: "person.2.fill", description: String(coffeeShopItem.personsPerTable))
+//                    EnviromentAtributtes(image: "powerplug.fill", description: String(coffeeShopItem.socketsPerTable))
+//                }
             }
             
         }.frame(height: 120)
@@ -61,7 +61,7 @@ struct EnviromentAtributtes : View {
 
 struct CoffeeShopItemList_Previews: PreviewProvider {
     static var previews: some View {
-        CoffeeShopItemList(coffeeShop: CoffeeShop.starbucks)
+        CoffeeShopItemList(coffeeShopItem: CoffeeShop.starbucks)
     }
 }
 
