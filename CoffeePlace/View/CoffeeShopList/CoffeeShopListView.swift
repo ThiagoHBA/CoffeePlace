@@ -30,7 +30,7 @@ struct CoffeeShopListView: View {
                     Section(
                         header: Text("Cafeterias próximas"),
                         content: {
-                            ForEach(searchResults, id: \.self) {
+                            ForEach(searchResults) {
                                 filteredShop in
                                 NavigationLink(destination: CoffeeShopItemDetails(coffeeShopItem: filteredShop)){
                                     CoffeeShopItemList(coffeeShopItem: filteredShop)
@@ -39,7 +39,7 @@ struct CoffeeShopListView: View {
                         }
                     )
                 }
-                .navigationTitle("CoffePlace")
+                .navigationTitle("CoffeePlace")
                  .searchable(text: $controller.searchText)
                  .listStyle(.plain)
             }

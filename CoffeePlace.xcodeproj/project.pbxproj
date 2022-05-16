@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		004F1E34282E8A1E00003F07 /* CoffeeShopItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F1E33282E8A1E00003F07 /* CoffeeShopItemDetails.swift */; };
 		00B33425282EDA9600CEA878 /* CoffeeShopCategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B33424282EDA9600CEA878 /* CoffeeShopCategoryItem.swift */; };
+		00C6FE1B283277EE00C48BE1 /* CoffeeInformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6FE1A283277EE00C48BE1 /* CoffeeInformations.swift */; };
+		00C6FE1D2832780A00C48BE1 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6FE1C2832780A00C48BE1 /* ContactModel.swift */; };
+		00C6FE2128327A3900C48BE1 /* DescriptionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6FE2028327A3900C48BE1 /* DescriptionComponent.swift */; };
+		00C6FE2328327A8F00C48BE1 /* ContactComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6FE2228327A8F00C48BE1 /* ContactComponent.swift */; };
+		00C6FE252832907200C48BE1 /* LocalizationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6FE242832907200C48BE1 /* LocalizationComponent.swift */; };
+		00C6FE272832966100C48BE1 /* CoffeeDataComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6FE262832966100C48BE1 /* CoffeeDataComponent.swift */; };
 		00C9C9F8282E842E005BD86F /* CoffeeShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C9C9F7282E842E005BD86F /* CoffeeShopListViewController.swift */; };
 		00F3639F282D47E400E63302 /* CoffeePlaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3639E282D47E400E63302 /* CoffeePlaceApp.swift */; };
 		00F363A3282D47E500E63302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F363A2282D47E500E63302 /* Assets.xcassets */; };
@@ -41,6 +47,12 @@
 /* Begin PBXFileReference section */
 		004F1E33282E8A1E00003F07 /* CoffeeShopItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopItemDetails.swift; sourceTree = "<group>"; };
 		00B33424282EDA9600CEA878 /* CoffeeShopCategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopCategoryItem.swift; sourceTree = "<group>"; };
+		00C6FE1A283277EE00C48BE1 /* CoffeeInformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeInformations.swift; sourceTree = "<group>"; };
+		00C6FE1C2832780A00C48BE1 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		00C6FE2028327A3900C48BE1 /* DescriptionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionComponent.swift; sourceTree = "<group>"; };
+		00C6FE2228327A8F00C48BE1 /* ContactComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactComponent.swift; sourceTree = "<group>"; };
+		00C6FE242832907200C48BE1 /* LocalizationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationComponent.swift; sourceTree = "<group>"; };
+		00C6FE262832966100C48BE1 /* CoffeeDataComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDataComponent.swift; sourceTree = "<group>"; };
 		00C9C9F7282E842E005BD86F /* CoffeeShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListViewController.swift; sourceTree = "<group>"; };
 		00F3639B282D47E400E63302 /* CoffeePlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeePlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F3639E282D47E400E63302 /* CoffeePlaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePlaceApp.swift; sourceTree = "<group>"; };
@@ -81,6 +93,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00C6FE1E2832795E00C48BE1 /* CoffeeShopDetails */ = {
+			isa = PBXGroup;
+			children = (
+				00C6FE1F2832797700C48BE1 /* Components */,
+				004F1E33282E8A1E00003F07 /* CoffeeShopItemDetails.swift */,
+			);
+			path = CoffeeShopDetails;
+			sourceTree = "<group>";
+		};
+		00C6FE1F2832797700C48BE1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				00C6FE2028327A3900C48BE1 /* DescriptionComponent.swift */,
+				00C6FE2228327A8F00C48BE1 /* ContactComponent.swift */,
+				00C6FE242832907200C48BE1 /* LocalizationComponent.swift */,
+				00C6FE262832966100C48BE1 /* CoffeeDataComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		00F36392282D47E400E63302 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +173,7 @@
 		00F363C8282D482D00E63302 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				00C6FE1E2832795E00C48BE1 /* CoffeeShopDetails */,
 				00F363C9282D489100E63302 /* CoffeeShopList */,
 			);
 			path = View;
@@ -169,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				00F363CF282D495400E63302 /* CoffeeShopModel.swift */,
+				00C6FE1A283277EE00C48BE1 /* CoffeeInformations.swift */,
+				00C6FE1C2832780A00C48BE1 /* ContactModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				00F363D2282D583300E63302 /* CoffeeShopItemList.swift */,
-				004F1E33282E8A1E00003F07 /* CoffeeShopItemDetails.swift */,
 				00B33424282EDA9600CEA878 /* CoffeeShopCategoryItem.swift */,
 			);
 			path = Components;
@@ -322,11 +356,17 @@
 			files = (
 				00B33425282EDA9600CEA878 /* CoffeeShopCategoryItem.swift in Sources */,
 				00F363CB282D48B400E63302 /* CoffeeShopListView.swift in Sources */,
+				00C6FE272832966100C48BE1 /* CoffeeDataComponent.swift in Sources */,
+				00C6FE252832907200C48BE1 /* LocalizationComponent.swift in Sources */,
+				00C6FE1D2832780A00C48BE1 /* ContactModel.swift in Sources */,
 				00F363D3282D583300E63302 /* CoffeeShopItemList.swift in Sources */,
 				00F3639F282D47E400E63302 /* CoffeePlaceApp.swift in Sources */,
+				00C6FE1B283277EE00C48BE1 /* CoffeeInformations.swift in Sources */,
 				004F1E34282E8A1E00003F07 /* CoffeeShopItemDetails.swift in Sources */,
 				00C9C9F8282E842E005BD86F /* CoffeeShopListViewController.swift in Sources */,
+				00C6FE2128327A3900C48BE1 /* DescriptionComponent.swift in Sources */,
 				00F363D0282D495400E63302 /* CoffeeShopModel.swift in Sources */,
+				00C6FE2328327A8F00C48BE1 /* ContactComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

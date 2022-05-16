@@ -7,30 +7,41 @@
 
 import Foundation
 
-struct CoffeeShop : Hashable {
+struct CoffeeShop : Identifiable {
+    var id = UUID()
     var name: String
     var description: String
     var image: String
-    var hasWifi: Bool
-    var hasPrivateEviroment : Bool
-    var personsPerTable: Int
-    var socketsPerTable: Int
+    var informations: CoffeeInformations
     var schedule: Date
     var coordinates: String
-    var contact: String
+    var contact : Contact
 }
 
 extension CoffeeShop {
     static var starbucks = CoffeeShop (
         name: "StarBucks",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        description:
+        """
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+        """,
         image: "starbucks",
-        hasWifi: true,
-        hasPrivateEviroment: true,
-        personsPerTable: 6,
-        socketsPerTable: 3,
+        informations: CoffeeInformations(
+            hasWifi: true,
+            hasPrivateEviroment: true,
+            personsPerTable: 6,
+            socketsPerTable: 3
+        ),
         schedule: Date(),
         coordinates: "",
-        contact: ""
+        contact: Contact(
+            email: "user@gmail.com",
+            phone: 85984324352,
+            socialMedia: "@instagram"
+        )
     )
 }
+
+
+
