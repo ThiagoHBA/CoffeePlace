@@ -9,48 +9,55 @@ import SwiftUI
 
 struct CoffeeShopItemDetails: View {
     var coffeeShopItem : CoffeeShop
-
+    
     var body: some View {
-            ScrollView{
-                VStack {
-                    Image(coffeeShopItem.image)
-                        .resizable()
-                        .frame(height: 350)
-                        .scaledToFill()
-                    
-                    HStack{
+        ScrollView{
+            VStack {
+                
+                Image(coffeeShopItem.image)
+                    .resizable()
+                    .frame(height: 350)
+                    .scaledToFill()
+                
+                
+                HStack{
+                    VStack(alignment: .leading){
                         Text(coffeeShopItem.name)
                             .bold()
                             .font(.largeTitle)
-                            .padding(5)
                         
-                        Spacer()
-                        
-                        Text("5 km")
-                            .foregroundColor(.gray)
-                            .font(.subheadline)
-                    }.padding()
+                        Text("Aberto")
+                            .font(.headline)
+                            .foregroundColor(.green)
+                    }
                     
-                    Divider()
+                    Spacer()
                     
-                    DescriptionComponent(description: coffeeShopItem.description)
-                    
-                    Divider()
-                    
-                    CoffeeDataComponent(informations: coffeeShopItem.informations)
-                    
-                    Divider()
-                    
-                    LocalizationComponent(cordinates: coffeeShopItem.coordinates)
-                    
-                    Divider()
-                    
-                    ContactComponent(contact: coffeeShopItem.contact)
-
-                }
-            }.ignoresSafeArea()
+                    Text("5 km")
+                        .foregroundColor(.gray)
+                        .font(.subheadline)
+                }.padding()
+                
+                Divider()
+                
+                DescriptionComponent(description: coffeeShopItem.description)
+                
+                Divider()
+                
+                CoffeeDataComponent(informations: coffeeShopItem.informations)
+                
+                Divider()
+                
+                LocalizationComponent(cordinates: coffeeShopItem.coordinates)
+                
+                Divider()
+                
+                ContactComponent(contact: coffeeShopItem.contact)
+                
+            }
+        }.ignoresSafeArea()
         
-      
+        
     }
 }
 

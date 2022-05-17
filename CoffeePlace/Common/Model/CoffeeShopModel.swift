@@ -8,7 +8,7 @@
 import Foundation
 
 struct CoffeeShop : Identifiable {
-    var id = UUID()
+    var id = UUID() 
     var name: String
     var description: String
     var image: String

@@ -12,39 +12,43 @@ struct CoffeeShopListView: View {
     @ObservedObject var controller = CoffeeShopListViewController()
     
     var body: some View {
-        VStack {
-            NavigationView{
-                List {
-                    Section(
-                        header: Text("Categorias"),
-                        content: {
-                            ScrollView(.horizontal, showsIndicators: false){
-                                HStack{
-                                    CoffeeShopCategoryItem()
-                                    CoffeeShopCategoryItem()
-                                    CoffeeShopCategoryItem()
-                                    CoffeeShopCategoryItem()
-                                }
-                            }
-                    })
-                    Section(
-                        header: Text("Cafeterias próximas"),
-                        content: {
-                            ForEach(searchResults) {
-                                filteredShop in
-                                NavigationLink(destination: CoffeeShopItemDetails(coffeeShopItem: filteredShop)){
-                                    CoffeeShopItemList(coffeeShopItem: filteredShop)
-                                }
+        NavigationView{
+            List {
+                Section(
+                    header: Text("Categorias"),
+                    content: {
+                        ScrollView(.horizontal, showsIndicators: false){
+                            HStack{
+                                CoffeeShopCategoryItem()
+                                CoffeeShopCategoryItem()
+                                CoffeeShopCategoryItem()
+                                CoffeeShopCategoryItem()
                             }
                         }
-                    )
+                    })
+                Section(
+                    header: Text("Cafeterias próximas"),
+                    content: {
+                        ForEach(searchResults) {
+                            filteredShop in
+                            NavigationLink(destination: CoffeeShopItemDetails(coffeeShopItem: filteredShop)){
+                                CoffeeShopItemList(coffeeShopItem: filteredShop)
+                            }
+                        }
+                    }
+                )
+            }
+            .navigationTitle("CoffeePlace")
+            .searchable(text: $controller.searchText)
+            .listStyle(.plain)
+            .toolbar{
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: CoffeeShopRegisterView()){
+                        Image(systemName: "plus")
+                    }
                 }
-                .navigationTitle("CoffeePlace")
-                 .searchable(text: $controller.searchText)
-                 .listStyle(.plain)
             }
         }
-        
     }
     
     var searchResults: [CoffeeShop] {

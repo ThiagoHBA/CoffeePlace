@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000B055E2833CCFF00217C8C /* CoffeeShopRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B055D2833CCFF00217C8C /* CoffeeShopRegisterView.swift */; };
+		000B05602833D8A100217C8C /* CoffeeShopRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B055F2833D8A100217C8C /* CoffeeShopRegisterController.swift */; };
+		000B05632833F1E300217C8C /* ElegantToggleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B05622833F1E300217C8C /* ElegantToggleComponent.swift */; };
+		000B05652833F41C00217C8C /* LeadingIconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B05642833F41C00217C8C /* LeadingIconTextField.swift */; };
 		004F1E34282E8A1E00003F07 /* CoffeeShopItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F1E33282E8A1E00003F07 /* CoffeeShopItemDetails.swift */; };
 		00B33425282EDA9600CEA878 /* CoffeeShopCategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B33424282EDA9600CEA878 /* CoffeeShopCategoryItem.swift */; };
 		00C6FE1B283277EE00C48BE1 /* CoffeeInformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6FE1A283277EE00C48BE1 /* CoffeeInformations.swift */; };
@@ -45,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000B055D2833CCFF00217C8C /* CoffeeShopRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopRegisterView.swift; sourceTree = "<group>"; };
+		000B055F2833D8A100217C8C /* CoffeeShopRegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopRegisterController.swift; sourceTree = "<group>"; };
+		000B05622833F1E300217C8C /* ElegantToggleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegantToggleComponent.swift; sourceTree = "<group>"; };
+		000B05642833F41C00217C8C /* LeadingIconTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingIconTextField.swift; sourceTree = "<group>"; };
 		004F1E33282E8A1E00003F07 /* CoffeeShopItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopItemDetails.swift; sourceTree = "<group>"; };
 		00B33424282EDA9600CEA878 /* CoffeeShopCategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopCategoryItem.swift; sourceTree = "<group>"; };
 		00C6FE1A283277EE00C48BE1 /* CoffeeInformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeInformations.swift; sourceTree = "<group>"; };
@@ -93,6 +101,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000B055C2833CC7300217C8C /* CoffeeShopRegister */ = {
+			isa = PBXGroup;
+			children = (
+				000B05612833F19300217C8C /* Components */,
+				000B055D2833CCFF00217C8C /* CoffeeShopRegisterView.swift */,
+				000B055F2833D8A100217C8C /* CoffeeShopRegisterController.swift */,
+			);
+			path = CoffeeShopRegister;
+			sourceTree = "<group>";
+		};
+		000B05612833F19300217C8C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				000B05622833F1E300217C8C /* ElegantToggleComponent.swift */,
+				000B05642833F41C00217C8C /* LeadingIconTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		00C6FE1E2832795E00C48BE1 /* CoffeeShopDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +200,7 @@
 		00F363C8282D482D00E63302 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				000B055C2833CC7300217C8C /* CoffeeShopRegister */,
 				00C6FE1E2832795E00C48BE1 /* CoffeeShopDetails */,
 				00F363C9282D489100E63302 /* CoffeeShopList */,
 			);
@@ -355,6 +383,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B33425282EDA9600CEA878 /* CoffeeShopCategoryItem.swift in Sources */,
+				000B05602833D8A100217C8C /* CoffeeShopRegisterController.swift in Sources */,
+				000B055E2833CCFF00217C8C /* CoffeeShopRegisterView.swift in Sources */,
 				00F363CB282D48B400E63302 /* CoffeeShopListView.swift in Sources */,
 				00C6FE272832966100C48BE1 /* CoffeeDataComponent.swift in Sources */,
 				00C6FE252832907200C48BE1 /* LocalizationComponent.swift in Sources */,
@@ -364,7 +394,9 @@
 				00C6FE1B283277EE00C48BE1 /* CoffeeInformations.swift in Sources */,
 				004F1E34282E8A1E00003F07 /* CoffeeShopItemDetails.swift in Sources */,
 				00C9C9F8282E842E005BD86F /* CoffeeShopListViewController.swift in Sources */,
+				000B05632833F1E300217C8C /* ElegantToggleComponent.swift in Sources */,
 				00C6FE2128327A3900C48BE1 /* DescriptionComponent.swift in Sources */,
+				000B05652833F41C00217C8C /* LeadingIconTextField.swift in Sources */,
 				00F363D0282D495400E63302 /* CoffeeShopModel.swift in Sources */,
 				00C6FE2328327A8F00C48BE1 /* ContactComponent.swift in Sources */,
 			);
