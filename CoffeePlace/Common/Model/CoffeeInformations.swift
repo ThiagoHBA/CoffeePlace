@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CoffeeInformations {
+struct CoffeeInformations : Codable {
     var hasWifi: Bool
     var hasPrivateEviroment : Bool
     var personsPerTable: Int

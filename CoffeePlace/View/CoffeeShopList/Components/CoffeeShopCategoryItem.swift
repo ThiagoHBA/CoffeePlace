@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CoffeeShopCategoryItem: View {
+    let category : Category
+    
     var body: some View {
         VStack {
             Image("starbucks")
@@ -17,7 +19,8 @@ struct CoffeeShopCategoryItem: View {
             .cornerRadius(25)
             .shadow(radius: 2)
             
-            Text("Descrição")
+            Text(category.rawValue)
+                .bold()
             
         }
     }
@@ -25,6 +28,6 @@ struct CoffeeShopCategoryItem: View {
 
 struct CoffeeShopCategoryItem_Previews: PreviewProvider {
     static var previews: some View {
-        CoffeeShopCategoryItem()
+        CoffeeShopCategoryItem(category: Category.study)
     }
 }

@@ -8,7 +8,14 @@
 import Foundation
 
 class CoffeeShopListViewController : ObservableObject {
+    private var repository : CoffeeShopRepository = CoffeeShopRepository()
+    
     @Published var showingSheet = false
     @Published var searchText = ""
-    @Published var coffeeShops : [CoffeeShop] = [.starbucks,.starbucks,.starbucks,.starbucks]
+    @Published var coffeeShops : [CoffeeShop] = []
+    
+    func fetchCoffeeShops() {
+        self.coffeeShops = repository.getAllCoffeeShops()
+    }
+    
 }

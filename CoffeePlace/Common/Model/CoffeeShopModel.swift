@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CoffeeShop : Identifiable {
+struct CoffeeShop : Identifiable, Codable {
     var id = UUID() 
     var name: String
     var description: String
@@ -16,6 +16,15 @@ struct CoffeeShop : Identifiable {
     var schedule: Date
     var coordinates: String
     var contact : Contact
+    
+    static func fromJsonList(listData: Data) -> [CoffeeShop] {
+        return try! JSONDecoder().decode([CoffeeShop].self, from: listData)
+    }
+    
+    static func fromJsonSingleObject(singleData: Data) -> CoffeeShop {
+        return try! JSONDecoder().decode(CoffeeShop.self, from: singleData)
+    }
+    
 }
 
 extension CoffeeShop {

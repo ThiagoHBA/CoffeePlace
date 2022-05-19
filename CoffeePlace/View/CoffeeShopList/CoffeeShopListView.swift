@@ -17,12 +17,11 @@ struct CoffeeShopListView: View {
                 Section(
                     header: Text("Categorias"),
                     content: {
-                        ScrollView(.horizontal, showsIndicators: false){
+                        ScrollView(.horizontal, showsIndicators: false) {
                             HStack{
-                                CoffeeShopCategoryItem()
-                                CoffeeShopCategoryItem()
-                                CoffeeShopCategoryItem()
-                                CoffeeShopCategoryItem()
+                                ForEach(Category.allCases, id: \.self) {
+                                    CoffeeShopCategoryItem(category: $0)
+                                }
                             }
                         }
                     })
@@ -48,7 +47,9 @@ struct CoffeeShopListView: View {
                     }
                 }
             }
-        }
+        }.onAppear(perform: {
+            controller.fetchCoffeeShops()
+        })
     }
     
     var searchResults: [CoffeeShop] {
@@ -63,5 +64,6 @@ struct CoffeeShopListView: View {
 struct CoffeeShopListView_Previews: PreviewProvider {
     static var previews: some View {
         CoffeeShopListView()
+            
     }
 }
