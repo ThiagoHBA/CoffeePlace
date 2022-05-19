@@ -3,7 +3,7 @@
         "id":"9A2FCB7E-8821-4C2D-ADA6-52413CC049FB",
         "name":"StarBucks",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  n",
-        "image" : "starbucks",
+        "image" : "Starbucks",
         "coordinates": "",
         "contact":{
             "email":"user@gmail.com",
@@ -16,6 +16,66 @@
             "hasPrivateEviroment":true,
             "personsPerTable":6,
             "socketsPerTable":3
+        },
+        "schedule":674570461.95835805
+    },
+    {
+        "id":"9A2FCB7E-8821-4C2D-ADA6-52413CC049FC",
+        "name": "Mercado do Café | Cafeteria, Padaria & Confeitaria",
+        "description": "Cafés especiais com tortas, mais lanches e pratos lights, em espaço tranquilo e acolhedor com toque artístico.",
+        "image" : "MercadoCafe",
+        "coordinates": "",
+        "contact":{
+            "email":"user@gmail.com",
+            "id":"B883149B-770D-4539-8810-B8A7EC0A3F28",
+            "phone":85984324352,
+            "socialMedia":"@instagram"
+        },
+        "informations":{
+            "hasWifi":true,
+            "hasPrivateEviroment":false,
+            "personsPerTable":3,
+            "socketsPerTable":0
+        },
+        "schedule":674570461.95835805
+    },
+    {
+        "id":"9A2FCB7E-8821-4C2D-ADA6-52413CC049FD",
+        "name": "Greta Café",
+        "description": "Variedade de cafés especiais, milk-shakes, croissants, lanches e hambúrgueres, em espaço moderno com delivery.",
+        "image" : "GretaCafe",
+        "coordinates": "",
+        "contact":{
+            "email":"user@gmail.com",
+            "id":"B883149B-770D-4539-8810-B8A7EC0A3F28",
+            "phone":85984324352,
+            "socialMedia":"@instagram"
+        },
+        "informations":{
+            "hasWifi":false,
+            "hasPrivateEviroment":true,
+            "personsPerTable":2,
+            "socketsPerTable":4
+        },
+        "schedule":674570461.95835805
+    },
+    {
+        "id":"9A2FCB7E-8821-4C2D-ADA6-52413CC049FE",
+        "name": "Consulado Café",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  n",
+        "image" : "Consulado",
+        "coordinates": "",
+        "contact":{
+            "email":"user@gmail.com",
+            "id":"B883149B-770D-4539-8810-B8A7EC0A3F28",
+            "phone":85984324352,
+            "socialMedia":"@instagram"
+        },
+        "informations":{
+            "hasWifi":false,
+            "hasPrivateEviroment":true,
+            "personsPerTable":2,
+            "socketsPerTable":4
         },
         "schedule":674570461.95835805
     }

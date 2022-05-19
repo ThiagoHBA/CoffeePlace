@@ -12,7 +12,7 @@ struct CoffeeShopCategoryItem: View {
     
     var body: some View {
         VStack {
-            Image("starbucks")
+            Image(category.rawValue)
                 .resizable()
                 .scaledToFill()
             .frame(width: 150, height: 150)
@@ -20,7 +20,6 @@ struct CoffeeShopCategoryItem: View {
             .shadow(radius: 2)
             
             Text(category.rawValue)
-                .bold()
             
         }
     }

@@ -25,6 +25,7 @@ struct CoffeeShopItemDetails: View {
                         Text(coffeeShopItem.name)
                             .bold()
                             .font(.largeTitle)
+                            .padding(.bottom, 5)
                         
                         Text("Aberto")
                             .font(.headline)
@@ -61,11 +62,11 @@ struct CoffeeShopItemDetails: View {
     }
 }
 
-struct CoffeeShopItemDetails_Previews: PreviewProvider {
-    static var previews: some View {
-        CoffeeShopItemDetails(coffeeShopItem: CoffeeShop.starbucks)
-    }
-}
-
-
+//struct CoffeeShopItemDetails_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CoffeeShopItemDetails(coffeeShopItem: CoffeeShop.starbucks)
+//    }
+//}
+//
+//
 

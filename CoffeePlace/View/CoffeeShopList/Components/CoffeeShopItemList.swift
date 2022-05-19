@@ -31,7 +31,9 @@ struct CoffeeShopItemList: View {
     
             VStack(alignment: .leading){
                 Text(coffeeShopItem.name).font(.title2).bold()
+                    .lineLimit(2).padding(.bottom, 5)
                 Text(coffeeShopItem.description).font(.caption)
+                    .lineLimit(3)
         
                 Spacer()
                 
@@ -59,9 +61,9 @@ struct EnviromentAtributtes : View {
     }
 }
 
-struct CoffeeShopItemList_Previews: PreviewProvider {
-    static var previews: some View {
-        CoffeeShopItemList(coffeeShopItem: CoffeeShop.starbucks)
-    }
-}
-
+//struct CoffeeShopItemList_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CoffeeShopItemList(coffeeShopItem: CoffeeShop.starbucks)
+//    }
+//}
+//

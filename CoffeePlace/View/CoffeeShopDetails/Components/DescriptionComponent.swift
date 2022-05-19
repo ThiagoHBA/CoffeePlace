@@ -22,9 +22,11 @@ struct DescriptionComponent: View {
                         isExpanded.toggle()
                     }
                 }) {
-                    Text("Mais")
-                        .font(.caption).bold()
-                        .padding(.trailing, 5)
+                    if description.count > 200 {
+                        Text("Mais")
+                            .font(.body).bold()
+                            .padding(.trailing, 5)
+                    }
                 }
             }
 
