@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Contact : Identifiable {
+struct Contact : Identifiable, Codable{
     var id = UUID()
     var email: String
     var phone: Int

@@ -87,7 +87,9 @@ struct CoffeeShopRegisterView: View {
                 ToolbarItem(
                     placement: .navigationBarTrailing,
                     content: {
-                        Button("Registrar") {}
+                        Button("Registrar") {
+                            controller.createCoffeeShop()
+                        }
                         .disabled(controller.disableRegisterButton())
                     }
                 )

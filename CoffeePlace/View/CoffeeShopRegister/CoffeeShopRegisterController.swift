@@ -2,6 +2,8 @@ import Foundation
 import MapKit
 
 class CoffeeShopRegisterController : ObservableObject {
+    private let repository = CoffeeShopRepository()
+    
     @Published var name: String = ""
     @Published var description : String = ""
     @Published var hasWifi : Bool = false
@@ -20,5 +22,30 @@ class CoffeeShopRegisterController : ObservableObject {
     
     func disableRegisterButton() -> Bool {
         return name.isEmpty || description.isEmpty
+    }
+    
+    func createCoffeeShop() {
+        repository.createCoffeeShop(model: self.toModel())
+    }
+    
+    private func toModel() -> CoffeeShop {
+        return CoffeeShop(
+            name: self.name,
+            description: self.description,
+            image: "starbucks",
+            informations: CoffeeInformations(
+                hasWifi: self.hasWifi,
+                hasPrivateEviroment: self.hasPrivateEnviroment,
+                personsPerTable: self.personPerTable,
+                socketsPerTable: self.socketsPerTable
+            ),
+            schedule: Date(),
+            coordinates: "",
+            contact: Contact(
+                email: self.email,
+                phone: 000000000,
+                socialMedia: self.socialMedia
+            )
+        )
     }
 }

@@ -1,0 +1,24 @@
+[
+    {
+        "id":"9A2FCB7E-8821-4C2D-ADA6-52413CC049FB",
+        "name":"StarBucks",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  n",
+        "image" : "starbucks",
+        "coordinates": "",
+        "contact":{
+            "email":"user@gmail.com",
+            "id":"B883149B-770D-4539-8810-B8A7EC0A3F28",
+            "phone":85984324352,
+            "socialMedia":"@instagram"
+        },
+        "informations":{
+            "hasWifi":true,
+            "hasPrivateEviroment":true,
+            "personsPerTable":6,
+            "socketsPerTable":3
+        },
+        "schedule":674570461.95835805
+    }
+]
+ 
+ 

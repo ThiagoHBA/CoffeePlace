@@ -48,7 +48,9 @@ struct CoffeeShopListView: View {
                     }
                 }
             }
-        }
+        }.onAppear(perform: {
+            controller.fetchCoffeeShops()
+        })
     }
     
     var searchResults: [CoffeeShop] {

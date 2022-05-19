@@ -11,6 +11,10 @@
 		000B05602833D8A100217C8C /* CoffeeShopRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B055F2833D8A100217C8C /* CoffeeShopRegisterController.swift */; };
 		000B05632833F1E300217C8C /* ElegantToggleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B05622833F1E300217C8C /* ElegantToggleComponent.swift */; };
 		000B05652833F41C00217C8C /* LeadingIconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B05642833F41C00217C8C /* LeadingIconTextField.swift */; };
+		00313B9F2835150E00C1601F /* CoffeeShopRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00313B9E2835150E00C1601F /* CoffeeShopRepository.swift */; };
+		00313BA22835154900C1601F /* CoffeeShopRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00313BA12835154900C1601F /* CoffeeShopRepositoryProtocol.swift */; };
+		00313BA4283517BC00C1601F /* Database.json in Resources */ = {isa = PBXBuildFile; fileRef = 00313BA3283517BC00C1601F /* Database.json */; };
+		00313BA728352B5300C1601F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00313BA628352B5300C1601F /* Database.swift */; };
 		004F1E34282E8A1E00003F07 /* CoffeeShopItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F1E33282E8A1E00003F07 /* CoffeeShopItemDetails.swift */; };
 		00B33425282EDA9600CEA878 /* CoffeeShopCategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B33424282EDA9600CEA878 /* CoffeeShopCategoryItem.swift */; };
 		00C6FE1B283277EE00C48BE1 /* CoffeeInformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6FE1A283277EE00C48BE1 /* CoffeeInformations.swift */; };
@@ -53,6 +57,10 @@
 		000B055F2833D8A100217C8C /* CoffeeShopRegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopRegisterController.swift; sourceTree = "<group>"; };
 		000B05622833F1E300217C8C /* ElegantToggleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegantToggleComponent.swift; sourceTree = "<group>"; };
 		000B05642833F41C00217C8C /* LeadingIconTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingIconTextField.swift; sourceTree = "<group>"; };
+		00313B9E2835150E00C1601F /* CoffeeShopRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopRepository.swift; sourceTree = "<group>"; };
+		00313BA12835154900C1601F /* CoffeeShopRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopRepositoryProtocol.swift; sourceTree = "<group>"; };
+		00313BA3283517BC00C1601F /* Database.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Database.json; sourceTree = "<group>"; };
+		00313BA628352B5300C1601F /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		004F1E33282E8A1E00003F07 /* CoffeeShopItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopItemDetails.swift; sourceTree = "<group>"; };
 		00B33424282EDA9600CEA878 /* CoffeeShopCategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopCategoryItem.swift; sourceTree = "<group>"; };
 		00C6FE1A283277EE00C48BE1 /* CoffeeInformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeInformations.swift; sourceTree = "<group>"; };
@@ -118,6 +126,32 @@
 				000B05642833F41C00217C8C /* LeadingIconTextField.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		00313B9D283514F100C1601F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				00313BA02835152100C1601F /* CoffeeShopRepository */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		00313BA02835152100C1601F /* CoffeeShopRepository */ = {
+			isa = PBXGroup;
+			children = (
+				00313B9E2835150E00C1601F /* CoffeeShopRepository.swift */,
+				00313BA12835154900C1601F /* CoffeeShopRepositoryProtocol.swift */,
+			);
+			path = CoffeeShopRepository;
+			sourceTree = "<group>";
+		};
+		00313BA528352B3400C1601F /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				00313BA3283517BC00C1601F /* Database.json */,
+				00313BA628352B5300C1601F /* Database.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		00C6FE1E2832795E00C48BE1 /* CoffeeShopDetails */ = {
@@ -220,6 +254,8 @@
 		00F363CC282D48F100E63302 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				00313BA528352B3400C1601F /* Database */,
+				00313B9D283514F100C1601F /* Repository */,
 				00F363CE282D490A00E63302 /* Enum */,
 				00F363CD282D490000E63302 /* Model */,
 			);
@@ -357,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00F363A6282D47E500E63302 /* Preview Assets.xcassets in Resources */,
+				00313BA4283517BC00C1601F /* Database.json in Resources */,
 				00F363A3282D47E500E63302 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,11 +431,14 @@
 				00C6FE1B283277EE00C48BE1 /* CoffeeInformations.swift in Sources */,
 				004F1E34282E8A1E00003F07 /* CoffeeShopItemDetails.swift in Sources */,
 				00C9C9F8282E842E005BD86F /* CoffeeShopListViewController.swift in Sources */,
+				00313BA22835154900C1601F /* CoffeeShopRepositoryProtocol.swift in Sources */,
 				000B05632833F1E300217C8C /* ElegantToggleComponent.swift in Sources */,
 				00C6FE2128327A3900C48BE1 /* DescriptionComponent.swift in Sources */,
 				000B05652833F41C00217C8C /* LeadingIconTextField.swift in Sources */,
 				00F363D0282D495400E63302 /* CoffeeShopModel.swift in Sources */,
 				00C6FE2328327A8F00C48BE1 /* ContactComponent.swift in Sources */,
+				00313BA728352B5300C1601F /* Database.swift in Sources */,
+				00313B9F2835150E00C1601F /* CoffeeShopRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
