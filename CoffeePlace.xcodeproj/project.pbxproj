@@ -11,6 +11,7 @@
 		000B05602833D8A100217C8C /* CoffeeShopRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B055F2833D8A100217C8C /* CoffeeShopRegisterController.swift */; };
 		000B05632833F1E300217C8C /* ElegantToggleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B05622833F1E300217C8C /* ElegantToggleComponent.swift */; };
 		000B05652833F41C00217C8C /* LeadingIconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B05642833F41C00217C8C /* LeadingIconTextField.swift */; };
+		002A516A2836686F00DE5F52 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002A51692836686F00DE5F52 /* Category.swift */; };
 		00313B9F2835150E00C1601F /* CoffeeShopRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00313B9E2835150E00C1601F /* CoffeeShopRepository.swift */; };
 		00313BA22835154900C1601F /* CoffeeShopRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00313BA12835154900C1601F /* CoffeeShopRepositoryProtocol.swift */; };
 		00313BA4283517BC00C1601F /* Database.json in Resources */ = {isa = PBXBuildFile; fileRef = 00313BA3283517BC00C1601F /* Database.json */; };
@@ -57,6 +58,7 @@
 		000B055F2833D8A100217C8C /* CoffeeShopRegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopRegisterController.swift; sourceTree = "<group>"; };
 		000B05622833F1E300217C8C /* ElegantToggleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegantToggleComponent.swift; sourceTree = "<group>"; };
 		000B05642833F41C00217C8C /* LeadingIconTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingIconTextField.swift; sourceTree = "<group>"; };
+		002A51692836686F00DE5F52 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		00313B9E2835150E00C1601F /* CoffeeShopRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopRepository.swift; sourceTree = "<group>"; };
 		00313BA12835154900C1601F /* CoffeeShopRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopRepositoryProtocol.swift; sourceTree = "<group>"; };
 		00313BA3283517BC00C1601F /* Database.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Database.json; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 		00F363CE282D490A00E63302 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				002A51692836686F00DE5F52 /* Category.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				00C6FE2328327A8F00C48BE1 /* ContactComponent.swift in Sources */,
 				00313BA728352B5300C1601F /* Database.swift in Sources */,
 				00313B9F2835150E00C1601F /* CoffeeShopRepository.swift in Sources */,
+				002A516A2836686F00DE5F52 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
